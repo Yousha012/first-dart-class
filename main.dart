@@ -116,6 +116,7 @@ void main() {
 
   var names = ["Zohaib", "Jawad", "Yousha", "Summamah"];
   var fruits = ["orange", "mango"];
+  var fruits2 = ["orange", "mango"];
   // print(names[0]);
   // print(names.length);
   // print(names.reversed);
