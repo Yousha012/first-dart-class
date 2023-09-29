@@ -377,25 +377,15 @@ user(run) {
   String crun = stdin.readLineSync()!;
   int codrun = int.parse(crun);
   if (codrun == 1) {
-    return run = true;
+    return  true;
   } else {
-    return run = false;
+    return  false;
   }
 }
 
 void main() {
   var run = true;
-
-  // Application should ask user to select any of the below options:
-  // print("Enter any Below Option");
-  // print("1:Lenght Conversion");
-  // print("2:Temperature Conversion");
-  // print("3:Area Conversion");
-  // print("4:Weight Conversion");
-  // print("5:Time Conversion");
-  // do {
-  //   user(run);
-  // } while (run == true);
-  lcon();
-  // print(lenght()) ;
+  do {
+    run = user(run);
+  } while (run == true);
 }
