@@ -114,43 +114,5 @@ void main() {
   //   print('Grade: Aone');
   // }
 
-  var names = ["Zohaib", "Jawad", "Yousha", "Summamah"];
-  var fruits = ["orange", "mango"];
-  var fruits2 = ["orange", "mango"];
-  // print(names[0]);
-  // print(names.length);
-  // print(names.reversed);
-  // print(names.first);
-  // print(names.last);
-  // print(names.isEmpty);
-  // print(names.isNotEmpty);
-  // print(names.elementAt(3));
-  // names.replaceRange(0, 3, ["Umer", "Ibrahim"]);
-  // print(names);
-  // names.replaceRange(0, names.length, ["Yousha"]);
-  // print(names);
-  // names.replaceRange(names.length - 1, names.length, []);
-  // print(names);
-  // names.sort();
-  // print(names);
-  // names.addAll(fruits);
-  // print(names);
-  // names.insert(1, "abc");
-  // print(names);
-  // names.insertAll(3, fruits);
-  // print(names);
-  // names.remove("Yousha");
-  // print(names);
-  // names.removeAt(names.length - 1);
-  // print(names);
-  // names.removeLast();
-  // print(names);
-  // names.clear();
-  // print(names);
-  // names.removeWhere((e) => e == "Yousha");
-  // print(names);
-  // names.removeRange(1, 3);
-  // print(names);
-  // names.retainWhere((e) => e == "Yousha");
-  // print(names);
+  
 }
