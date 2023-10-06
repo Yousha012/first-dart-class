@@ -1,4 +1,4 @@
-import 'dart:io';
+// import 'dart:io';
 // void main() {
 // var names = ["Zohaib", "Jawad", "Yousha", "Summamah"];
 // var fruits = ["orange", "mango"];
@@ -94,6 +94,7 @@ import 'dart:io';
 // }
 // }
 
+// sir claas code
 // 23-9-2023
 // import 'dart:io';
 
@@ -225,39 +226,167 @@ import 'dart:io';
 //   print("Hello World");
 // }
 
-nameprint(a, b) {
-  String numberss = stdin.readLineSync()!;
-  // int factNum = int.parse(numberss);
-  var c = "$a $b $numberss";
-  print(c);
-}
+// nameprint(a, b) {
+//   String numberss = stdin.readLineSync()!;
+//   // int factNum = int.parse(numberss);
+//   var c = "$a $b $numberss";
+//   print(c);
+// }
 
-factorial() {
-  String numberss = stdin.readLineSync()!;
-  int factNum = int.parse(numberss);
+// factorial() {
+//   String numberss = stdin.readLineSync()!;
+//   int factNum = int.parse(numberss);
 
-  int result = 1;
-  while (factNum >= 1) {
-    result = result * factNum;
-    factNum--;
+//   int result = 1;
+//   while (factNum >= 1) {
+//     result = result * factNum;
+//     factNum--;
+//   }
+//   return result;
+// }
+
+// void main() {
+//   nameprint("yousha", "zafar");
+//   print(factorial());
+// }
+//
+//
+
+//
+
+//
+//
+
+//
+//
+//
+//
+//
+//
+//
+
+//
+
+// 30-9-2023
+// Name Parameter
+// fullname({String? fname, String? lname}) {
+//   return "$fname $lname";
+// }
+
+// studentinfo(
+//   String Rollnumber,
+//   String Class,
+//   String Percentage, {
+//   required String? fname,
+//   String? Mname = "",
+//   String? lname = "",
+// }) {
+//   return "$fname $Mname $lname Rollnumber : $Rollnumber Class : $Class Percentage : $Percentage";
+// }
+
+// // 30-9-2023
+// void main() {
+//   // Name Parameter
+//   // var result = fullname(fname: "Yousha" , lname: "");  // print(result);
+
+//   var student = studentinfo("123", "X", "78%", fname: "");
+//   print(student);
+// }
+
+//
+//
+//
+//
+//
+
+//
+
+//
+
+//
+//
+//
+//
+import 'dart:io';
+
+class Persons {
+  var name = "Yousha";
+  var age = "20";
+  var gender = "Male";
+
+// ya defualt constrctor ha jo data change kar dy ga
+  Persons() {
+    
+    name = "Sumamah";
+    age = "19";
+    gender = "Male";
+
   }
-  return result;
+
+// Constructor Data Change karna ka Lia Use Hota ha
+  changedata(String name, String age, String gender) {}
+
+// Parameterized Constrctor
+// Persons(String name, String age, String gender) {
+//   this. name = name;
+//   this. age = age;
+//   this. gender = gender;
+// }
+
+// Name Constrctor
+  // Persons.changedata(String name, String age, String gender) {
+  //   this. name = name;
+  //   this. age = age;
+  //   this. gender = gender;
+  // }
 }
 
 void main() {
-  nameprint("yousha", "zafar");
-  print(factorial());
+  var human = Persons();
+  print(human.name);
+  print(human.age);
+  print(human.gender);
 }
 
-// fullName(String fname, String lname) {
-//   return "$fname $lname";
+
+//
+
+// void main() {
+//   var men = Men ("Yousha", "20", "Male");
+//   print(men.showMen());
+//   var women = Women ("Sumamah", "20", "sheMale");
+//   print(women.showWomen());
+// }
+
+// class Human {
+//   String? name;
+//   String? age;
+//   String? gender;
+
+//   showHuman() {
+//     return "Name : $name , Age : $age , Gender : $gender";
+//   }
+// }
+
+// class Men extends Human {
+//   Men(String name, String age, String gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   showMen() {
+//     return "$name can drive at the age of $age";
+//   }
+// }
 
 
-
-
-
-
-
-
-
-
+// class Women extends Human {
+//   Women(String name, String age, String gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   showWomen() {
+//     return "$name can Cook at the age of $age";
+//   }
+// }
